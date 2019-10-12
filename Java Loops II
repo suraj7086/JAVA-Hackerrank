@@ -1,0 +1,37 @@
+import java.util.*;
+import java.io.*;
+
+class Solution{
+
+       public int powerr(int r, int k)
+    {   int power;
+        power=1;
+        for(int i=0;i<k;i++)
+        {
+            power = power *r;
+        }
+        return power;
+    }
+    public static void main(String []argh){
+        Solution s1 = new Solution();
+        Scanner in = new Scanner(System.in);
+        int t=in.nextInt();
+        int sum;
+        for(int i=0;i<t;i++){
+            int a = in.nextInt();
+            int b = in.nextInt();
+            int n = in.nextInt();
+
+        sum=a;
+       for(int j=0;j<n;j++)
+       {
+           sum= sum+s1.powerr(2,j)*b;
+           System.out.printf("%d ",sum);
+       }
+       System.out.printf("\n");
+     }    
+        
+        in.close();
+    }
+}
+
