@@ -1,0 +1,18 @@
+public class Demo {
+	Demo()
+	{
+		this(3459);
+		System.out.println("This is a first constructor");
+	}
+    Demo(int x)
+    {
+    	System.out.println("This is the second constructor and value of x is"+x);
+    }
+}
+
+class JavaDemo{
+	public static void main(String args[])
+	{
+		Demo d = new Demo();
+	}
+}
